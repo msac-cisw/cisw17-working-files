@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Laws of Robotics</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        color: #011831;
+        margin-bottom: 30px;
+        border-bottom: 1px solid;
+    }
+    .law {
+        margin-bottom: 50px;
+    }
+    .law h2 {
+        font-size: 2em;
+        color: #011831;
+        margin-bottom: 10px;
+    }
+    .law p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+    .reference {
+        font-size: 1.1em;
+        font-style: italic;
+        margin-top: 50px;
+    }
+    .reference a {
+        color: #007bff;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Three Laws of Robotics</h1>
+    <div class="law">
+        <h2>First Law</h2>
+        <p>A robot may not injure a human being or, through inaction, allow a human being to come to harm. This fundamental principle, introduced by Isaac Asimov in his stories, safeguards human safety as the highest priority for robots, preventing them from causing harm intentionally or by neglect.</p>
+    </div>
+    <div class="law">
+        <h2>Second Law</h2>
+        <p>A robot must obey the orders given it by human beings except where such orders would conflict with the First Law. Asimov’s second law dictates that robots must adhere to human commands, ensuring their utility and assistance to humanity, provided these commands do not jeopardize human safety.</p>
+    </div>
+    <div class="law">
+        <h2>Third Law</h2>
+        <p>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law. In Asimov’s framework, robots must prioritize their self-preservation, ensuring their continued operation and service, as long as doing so does not endanger human safety or violate human orders.</p>
+    </div>
+    <div class="reference">
+        <p>References: <a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics" target="_blank">Wikipedia</a>, <i>I, Robot</i> by Isaac Asimov</p>
+    </div>
+</div>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Laws of Robotics</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1 class="main-title">Three Laws of Robotics</h1>
+    <div class="law">
+        <h2>First Law</h2>
+        <p class="highlight">A robot may not injure a human being or, through inaction, allow a human being to come to harm.</p>
+        <!-- Add details about the first law below -->
+         <details>
+             <summary>Details about the First Law</summary>
+             <p>
+                The first law is the most basic and fundamental rule of robotics. It establishes the ethical boundary for robots, ensuring that they do not cause harm to humans or allow harm to occur without intervention.
+             </p>
+         </details>
+    </div>
+    <div class="law">
+        <h2>Second Law</h2>
+        <p class="highlight">A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.</p>
+        <!-- Add details about the second law below -->
+        <details>
+            <summary>Details about the Second Law</summary>
+            <p>
+                The second law establishes a hierarchy of control, ensuring that robots follow human instructions. However, it's important to note that this law is subordinate to the First Law, meaning a robot cannot follow an order that would result in harm to a human. This law balances human authority with the ethical constraints of the First Law.
+            </p>
+        </details>
+    </div>
+    <div class="law">
+        <h2>Third Law</h2>
+        <p class="highlight">A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</p>
+        <!-- Add details about the third law below -->
+        <details>
+            <summary>Details about the Third Law</summary>
+            <p>
+                The third law is a safeguard for the robot's existence. It ensures that the robot can protect itself from harm, even if it means taking actions that might conflict with the first or second laws.
+            </p>
+        </details>
+    </div>
+</div>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

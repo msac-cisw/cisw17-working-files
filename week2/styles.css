@@ -1,0 +1,15 @@
+body {
+    /* Center the webpage not the text */
+    margin: 0 auto;
+    /* Specify a width for the page */
+    max-width: 400px;
+    background-color: rgb(241, 241, 241);
+    font-size: 16px;
+    color: rgb(47, 47, 47);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 50px;
+}
