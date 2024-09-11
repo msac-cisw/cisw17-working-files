@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  ____ ___ ______        __  _ _____ 
+ / ___|_ _/ ___\ \      / / / |___  |
+| |    | |\___ \\ \ /\ / /  | |  / / 
+| |___ | | ___) |\ V  V /   | | / /  
+ \____|___|____/  \_/\_/    |_|/_/   
+                                     
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - Analyze this HTML</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+            color: #f4f4f9;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #bbbbbb;
+        }
+        .huge {
+            text-align: center;
+            font-size: 5em;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            background: #1e1e1e;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+            background-size: 400% 400%;
+            border-radius: 12px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="huge">CISW 17</h1>
+        <h2>Example Code</h2>
+        <p>Take a screenshot of the code. Edit the screenshot to identify the following parts:</p>
+        <ul>
+            <li>Doctype declaration</li>
+            <li>Head</li>
+            <li>Style tag</li>
+            <li>Body</li>
+        </ul>
+        <p>This may require 2 screenshots.</p>
+        <p>Use Cmd+Shift+4 to take a screenshot on macOS. Use the snipping tool on Windows.</p>
+    </div>
+    <footer>&copy; Sable Cantus.  All rights reserved.</footer>
+</body>
+</html>
