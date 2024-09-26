@@ -39,12 +39,15 @@ ol a {
     background-color: aliceblue;
     padding: 15px 10px;
 }
-ol a:hover {
+ol li a:hover {
     background-color: rgb(225, 206, 244);
     color: white;
 }
 ol a:visited {
     color:chocolate;
+}
+a:visited {
+    color:darkcyan;
 }
 
 .l337_coder {
