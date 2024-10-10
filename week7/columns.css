@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    background-color: #0e0e0e;
+    color: #fefefe;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1024px;
+}
+article {
+    /* min width & # of columns */
+    columns: 300px 3;
+    /* gap between columns */
+    column-gap: 30px;
+    /* column-rule-style: solid; */
+}
