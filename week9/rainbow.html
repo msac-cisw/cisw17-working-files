@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rainbow</title>
+    <!-- <script src="script.js" defer></script> -->
+    <!-- Sable Cantus
+         CISW 17-->
+</head>
+
+<body>
+        <h1>Rainbow</h1>
+        <!-- <p>Open your console to see the result.</p> -->
+
+    <script>
+        const colors = [
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "blue",
+            "rebeccapurple",
+            "violet"
+        ];
+        // pick a random number between 0 and 6
+        let x = Math.floor(Math.random() * 6);
+
+        // display the chosen color
+        console.log("You chose " + colors[x]);
+
+        // Change the background color to colors[x]
+        document.body.style.background = colors[x];
+    </script>
+</body>
+
+</html>
