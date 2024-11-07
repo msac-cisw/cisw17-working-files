@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Form Poem</title>
+    <!-- Sable Cantus
+         CISW 17 -->
+</head>
+
+<body class="w3-container">
+    <header class="w3-center">
+        <h1>Roses are ...</h1>
+    </header>
+
+    <main>
+        <form id="form" class="w3-container w3-card-4 w3-light-grey">
+
+            <label for="adj1">Please enter an adjective.</label>
+            <input type="text" id="adj1" class="w3-input" value="" required>
+            
+            <label for="adj2">Please enter another adjective.</label>
+            <input type="text" id="adj2" class="w3-input" value="" required>
+            
+            <label for="noun">Please enter a plural noun.</label>
+            <input type="text" id="noun" class="w3-input" value="" required>
+            
+            <label for="adj3">Please enter one more adjective.</label>
+            <input type="text" id="adj3" class="w3-input" value="" required>
+            <button id="submit" type="button" class="w3-button w3-blue">Submit</button>
+        </form>
+
+        <div id="poemOutput" class="w3-container w3-card-4 w3-light-grey" style="display:none;">
+            <pre id="poemDisplay"></pre>
+        </div>
+    </main>
+
+</body>
+
+</html>

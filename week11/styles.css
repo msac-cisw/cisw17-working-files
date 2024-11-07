@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    width: 400px;
+    background-color: #fefefe;
+    color: #0e0e0e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#box {
+    /* float: left; */
+    background-color: rebeccapurple;
+    border: dashed black;
+    height: 100px;
+    width: 150px;
+    margin: 20px 0;
+    color: white;
+}
+
+#box2 {
+    /* float: right; */
+    background-color: yellow;
+    border: dashed;
+    height: 100px;
+    width: 150px;
+    margin: 20px 0;
+    display: none;
+    
+}
