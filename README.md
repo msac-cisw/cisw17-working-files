@@ -1,4 +1,4 @@
-# CISW 17
+# CISW 17 Class Files
 
 This repository contains the classroom demonstrations and working files for our weekly class meetings.
 
