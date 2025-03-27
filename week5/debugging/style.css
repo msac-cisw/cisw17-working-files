@@ -1,0 +1,18 @@
+body {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color:f7f7f7;
+    color: #070707;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace
+}
+h1 {
+    font-family: Helvetica-neue, sans-serif;
+    font-size: ;
+    text-transform: capitalize;
+}
+p {
+    line-height: 1.5;
+}
+hr {
+}

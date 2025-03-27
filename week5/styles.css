@@ -1,0 +1,14 @@
+body {
+    /* Do this for every page: 
+        Center the webpage
+        Set the width in the browser */
+    margin: 25px auto;
+    max-width: 600px;
+    font-size: 22px;
+    border: 1px dashed gray;
+    background-color: beige;
+}
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}

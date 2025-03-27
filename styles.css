@@ -1,0 +1,15 @@
+body {
+    /* Do this for every page: 
+        Center the webpage
+        Set the width in the browser */
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 22px;
+
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 10px;
+    margin: 0 10px;
+}
