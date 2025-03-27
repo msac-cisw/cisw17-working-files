@@ -5,17 +5,23 @@ div {
     color: black;
     font-weight: bold;
     text-align: center; 
+    float: left;
+    margin: 10px;
 }
 div#d1 {
     background-color: lightcyan;
-
+    /* float: left; */
+    /* margin-left: 150px; */
+    /* float: right; */
 }
 div#d2 {
     background-color: plum;
+    float: right;
   
 }
 div#d3 {
     background-color: lightseagreen;
+    /* float: right; */
   
 }
 div#d4 {
