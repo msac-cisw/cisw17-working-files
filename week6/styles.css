@@ -1,0 +1,19 @@
+body {
+    /* Do this for every page: 
+        Center the webpage
+        Set the width in the browser */
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 22px;
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(9,9,121,0.2) 3%, rgba(0,212,255,0.2) 100%);  */
+
+}
+h1 {
+    text-align: center;
+}
+button {
+    font-size: 1.2em;
+    padding: 10px 10px;
+    margin: 0 10px;
+}

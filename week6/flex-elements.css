@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    height: 500px;
+    background-color: #3D43D9;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+    line-height: 75px;
+    font: 30px;
+}
