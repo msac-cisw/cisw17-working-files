@@ -1,0 +1,47 @@
+:root {
+    /* https://www.w3schools.com/css/css3_variables.asp */
+    --main-dark-color: rgb(22, 22, 22);
+    --main-light-color: rgb(249, 249, 249);
+    --lightblue: rgba(173, 216, 230, 0.6);
+  }
+  
+body {
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    /* Setup the CSS Grid */
+    display: grid;
+    /* header main footer */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;  
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;  
+    font-weight: 200;
+}
+header, main, footer {
+    grid-column: 1;
+}
+header {
+    background-color: var(--lightblue);
+}
+h1 {
+    padding-top: 0.3em;
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    max-width: 75%;
+    padding: 0 10px;
+}
+article {
+    column-count: 3;
+    column-width: 15em;
+    column-gap: 1.5em;
+}
+footer {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+    background-color: var(--lightblue);
+}
