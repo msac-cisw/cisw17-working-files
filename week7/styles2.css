@@ -1,0 +1,59 @@
+:root {
+    /* https://www.w3schools.com/css/css3_variables.asp */
+    --main-dark-color: rgb(22, 22, 22);
+    --main-light-color: rgb(249, 249, 249);
+    --header-bg-color: rgba(30, 143, 255, 0.781);
+  }
+body {
+    margin: 0 auto;
+    font-size: 24px;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    /* Setup the CSS Grid */
+    display: grid;
+    /* header main footer */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;    
+}
+header, main, footer {
+    grid-column: 1;
+}
+h1 {
+    padding-top: 0.3em;
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    max-width: 80%;
+}
+footer {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+    font: 0.8em;
+}
+footer p {
+    margin: 0 10px;
+}
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    body {
+        background-color: lightblue;
+        max-width: 600px;
+        font: 18px;
+    }
+    h1 {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: lightpink;
+        max-width: 800px;
+    }
+    
+}

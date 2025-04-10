@@ -1,0 +1,61 @@
+:root {
+    /* assign variables */
+    --main-dark-color: rgb(22, 22, 22);
+    --main-light-color: rgb(249, 249, 249);
+    --header-bg-color: rgba(30, 143, 255, 0.781);
+  }
+  
+body {
+    margin: 0 auto;
+    font-size: 24px;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    /* Setup the CSS Grid */
+    display: grid;
+    /* header main footer */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;    
+}
+header, main, footer {
+    grid-column: 1;
+}
+header {
+    background-color: var(--header-bg-color);
+    color: var(--main-light-color);
+}
+h1 {
+    padding-top: 0.3em;
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    max-width: 80%;
+}
+footer {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
+    font: 0.8em;
+}
+@media screen and (min-width: 768px){
+    body {
+        background-color: lightblue;
+        color: var(--main-dark-color);
+        font-size: 22px;
+    }
+    main {
+        max-width: 27em;
+    }
+    footer {
+        background-color: var(--header-bg-color);
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: blueviolet;
+        font-size: 14px;
+    }
+}
