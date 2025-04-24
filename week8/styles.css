@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    /* https://www.w3schools.com/css/css3_variables.asp */
+    --main-dark-color: rgb(22, 22, 22);
+    --main-light-color: rgb(249, 249, 249);
+  }
+  
+body {
+    margin: 0 auto;
+    font-size: 22px;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    /* Setup the CSS Grid */
+    display: grid;
+    /* header main footer */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;  
+    font-family: "Roboto Flex", sans-serif;  
+}
+header, main, footer {
+    grid-column: 1;
+}
+h1 {
+    padding-top: 0.3em;
+    text-align: center;
+    font-family: "Noto Serif", serif;
+}
+main {
+    margin: 0 auto;
+    width: 30em;
+}
+footer {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+}
+pre {
+    font-family: "Source Code Pro", monospace;
+    background-color: lightgray;
+    padding: 10px;
+    white-space: pre-wrap;
+}
