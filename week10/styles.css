@@ -1,0 +1,49 @@
+:root {
+    /* https://www.w3schools.com/css/css3_variables.asp */
+    --main-dark-color: rgb(22, 22, 22);
+    --main-light-color: rgb(249, 249, 249);
+  }
+  
+body {
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    /* Setup the CSS Grid */
+    display: grid;
+    /* header main footer */
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;    
+}
+header, main, footer {
+    grid-column: 1;
+}
+h1 {
+    padding-top: 0.3em;
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    width: 30em;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+footer {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+li {
+    list-style-type: none;
+}
+#madlib {
+    font-size: 2em;
+    padding: 5% 0 5% 20%;
+    background-color: white;
+    box-shadow: 8px 8px rgba(240, 128, 128, 0.2);
+}
