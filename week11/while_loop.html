@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>While Loops</title>
+    <!-- Sammy Student
+         Spring 2025 -->
+  </head>
+  <body>
+    <header>
+      <h1>While Loops</h1>
+    </header>
+    <main>
+      <!-- Content goes here -->
+       <p>The <code>while</code> loop loops through a block of code as long as a specified condition is true.</p>
+       <p>Learn more at <a href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank">W3 Schools - The While Loop</a>.</p>
+
+       <pre><code>
+    while (condition) {
+        // code block to be executed
+    }
+       </code></pre>
+       <p id="countdown"></p>
+       <script>
+        // Write a while loop countdown
+        let text = "";
+        let i = 10;
+        while (i >=1 ) {
+            text += i + "<br>";
+            i = i - 1;
+        }
+        text += "🚀🚀🚀 Blast Off! 🚀🚀🚀";
+
+        // add to the "countdown" paragraph
+        document.getElementById("countdown").innerHTML = text;
+        </script>
+        <details>
+            <summary>View the code</summary>
+            <pre><code>
+    let text = "";
+    let i = 10;
+    while (i >=1 ) {
+        text += i + "&lt;br&gt;";
+        i = i - 1;
+    }
+    text += "🚀🚀🚀 Blast Off! 🚀🚀🚀";
+
+    // add to the "countdown" paragraph
+    document.getElementById("countdown").innerHTML = text;
+</code></pre>
+</details>
+
+
+    </main>
+    <footer>Sammy Student – CISW 17 – Spring 2025</footer>
+  </body>
+</html>
