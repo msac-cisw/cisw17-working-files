@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="birthday.js" defer></script>
+    <title>Is Today Your Birthday?</title>
+    <!-- Sammy Student
+         Spring 2025 -->
+    <style>
+        .huger {
+            font-size: 3.7em;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="h1">Is Today Your Birthday?</h1>
+    </header>
+    <main>
+      <!-- Use a date input type to enter your next
+            birthday. Use JS to see if it's your bday -->
+        <form id="birthday" class="w3-container">
+            <label>Enter your next birthday:</label>
+            <br>
+            <input type="date" 
+                    class="w3-input"
+                    id="bday" 
+                    name="birthday">
+            <br>
+            <input type="submit"
+                    class="w3-button w3-blue" 
+                    id="submit" 
+                    name="submit" 
+                    value="Let's go!">
+            
+        </form>
+        <br>
+        <div id="message" class="w3-panel w3-center huger"></div>
+
+    </main>
+    <footer>Sammy Student – CISW 17 – Spring 2025</footer>
+  </body>
+</html>
