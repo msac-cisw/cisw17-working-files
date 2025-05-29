@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="tabs.js" defer></script>
+    <title>Tabbed Navigation</title>
+    <!-- Sammy Student
+         Spring 2025 -->
+  </head>
+  <body>
+    <header>
+      <h1>Tabbed Navigation</h1>
+    </header>
+    <main class="w3-container">
+      <!-- Create a menu, but using buttons for the onclick -->
+       <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablinks current"
+            onclick="openSoda(event, 'darksodas')">
+                Dark Sodas</button>
+            <button class="w3-bar-item w3-button tablinks"
+            onclick="openSoda(event, 'clearsodas')">
+                Clear Sodas</button>
+            <button class="w3-bar-item w3-button tablinks"
+            onclick="openSoda(event, 'energydrinks')">
+                Energy Drinks</button>
+       </div>
+
+       <!-- Create a content div -->
+        <div class="w3-border w3-container w3-white">
+            <!-- all the tab content goes here -->
+            <div class="soda" id="darksodas" style="display: block;">
+                <h2>Dark Sodas</h2>
+                <p>Ever ponder the personalities in our beverage cooler? Here we have the <b>Dark Sodas</b> – the rich, mysterious characters like colas and root beers. They often bring a bold, sweet flavor, sometimes with a hint of spice or caramel, and their deep color comes from ingredients like caramel coloring. They're the classic choice for a comforting, familiar fizz.</p>
+            </div>
+            <div class="soda" id="clearsodas" style="display: none;">
+                <h2>Clear Sodas</h2>
+                <p>Shimmering in the light, are the <b>Clear Sodas</b>. Think lemon-lime, club soda, and sparkling water. These are the crisp, clean, and often zesty members of the soda family. They're all about refreshment, often with a lighter taste profile, making them a go-to for a quick palate cleanser or a bubbly mixer. </p>
+            </div>
+            <div class="soda" id="energydrinks" style="display: none;">
+                <h2>Energy Drinks</h2>
+                <p>Let's not forget the <b>Energy Drinks</b> – the vibrant, high-octane cousins! Instantly recognizable by their often bold cans and even bolder flavors, these beverages are formulated with caffeine and other ingredients like taurine and B vitamins, promising that extra get-up-and-go when you need to power through a project or beat the afternoon slump.</p>
+            </div>
+
+        </div>
+        <p>Whether you're craving classic comfort, clear refreshment, or a jolt of energy, there's a can-do attitude waiting for you!</p>
+
+    </main>
+    <footer>Sammy Student – CISW 17 – Spring 2025</footer>
+  </body>
+</html>
