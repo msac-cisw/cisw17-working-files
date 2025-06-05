@@ -1,0 +1,163 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+/* Card Styles */
+.tool-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    cursor: pointer;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background: none;
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-category {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.vibe-score {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #198754;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.features-list li {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.detail-section {
+    margin-bottom: 1.5rem;
+}
+
+.detail-section h6 {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Form Controls */
+#searchInput, #categoryFilter, #deploymentFilter, #sortBy {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+#searchInput:focus, #categoryFilter:focus, #deploymentFilter:focus, #sortBy:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+.input-group-text {
+    background: white;
+    border-right: none;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.input-group .form-control:focus {
+    border-left: none;
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .tool-card {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tool-card {
+        font-size: 0.85rem;
+    }
+    
+    .features-list li {
+        font-size: 0.75em;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+} 

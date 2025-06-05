@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding Tools 2025: Complete Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Vibe Coding Tools 2025: Complete Overview</h1>
+            <p class="header__subtitle">Discover the latest AI-powered development tools revolutionizing how we code</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Introduction Section -->
+            <section class="intro">
+                <div class="card">
+                    <div class="card__body">
+                        <h2>What is Vibe Coding?</h2>
+                        <p>Vibe coding represents a new paradigm in software development where AI assistants seamlessly integrate into the developer workflow, providing intelligent code completion, natural language programming, and autonomous development capabilities. These tools enhance developer productivity while maintaining the creative flow and intuition that makes coding an art.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Dashboard -->
+            <section class="stats">
+                <div class="stats__grid">
+                    <div class="stat-card">
+                        <h3 class="stat-card__number" id="total-tools">18</h3>
+                        <p class="stat-card__label">Total Tools</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-card__number" id="total-categories">8</h3>
+                        <p class="stat-card__label">Categories</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-card__number" id="avg-score">7.4</h3>
+                        <p class="stat-card__label">Avg Vibe Score</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-card__number" id="free-tools">16</h3>
+                        <p class="stat-card__label">Free Tier Available</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Controls Section -->
+            <section class="controls">
+                <div class="controls__header">
+                    <h2>Explore Tools</h2>
+                    <div class="controls__actions">
+                        <button class="btn btn--secondary btn--sm" id="export-btn">Export CSV</button>
+                        <button class="btn btn--outline btn--sm" id="print-btn">Print View</button>
+                    </div>
+                </div>
+
+                <div class="controls__filters">
+                    <!-- Search Bar -->
+                    <div class="form-group search-group">
+                        <input type="text" class="form-control" id="search-input" placeholder="Search by name, description, or features...">
+                        <button class="search-clear" id="search-clear" aria-label="Clear search">✕</button>
+                    </div>
+
+                    <!-- Filter Controls -->
+                    <div class="filters">
+                        <div class="form-group">
+                            <label class="form-label" for="category-filter">Category</label>
+                            <select class="form-control" id="category-filter">
+                                <option value="">All Categories</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="free-tier-filter">Free Tier</label>
+                            <select class="form-control" id="free-tier-filter">
+                                <option value="">All</option>
+                                <option value="yes">Free Available</option>
+                                <option value="no">Paid Only</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="year-filter">Launch Year</label>
+                            <select class="form-control" id="year-filter">
+                                <option value="">All Years</option>
+                                <option value="2024+">2024+</option>
+                                <option value="2023+">2023+</option>
+                                <option value="2022+">2022+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn--secondary btn--sm" id="reset-filters">Reset Filters</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools Table -->
+            <section class="table-section">
+                <div class="table-container">
+                    <table class="tools-table" id="tools-table">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-column="name">
+                                    Name <span class="sort-indicator"></span>
+                                </th>
+                                <th class="sortable" data-column="category">
+                                    Category <span class="sort-indicator"></span>
+                                </th>
+                                <th class="sortable" data-column="pricing">
+                                    Pricing <span class="sort-indicator"></span>
+                                </th>
+                                <th class="sortable" data-column="vibe_score">
+                                    Vibe Score <span class="sort-indicator"></span>
+                                </th>
+                                <th class="sortable" data-column="company">
+                                    Company <span class="sort-indicator"></span>
+                                </th>
+                                <th class="sortable" data-column="launch_year">
+                                    Year <span class="sort-indicator"></span>
+                                </th>
+                                <th class="sortable" data-column="free_tier">
+                                    Free Tier <span class="sort-indicator"></span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tools-tbody">
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-footer">
+                    <p id="results-count">Showing 18 of 18 tools</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Tool Detail Modal -->
+    <div class="modal" id="tool-modal">
+        <div class="modal__backdrop" id="modal-backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="modal-title">Tool Details</h3>
+                <button class="modal__close" id="modal-close" aria-label="Close modal">✕</button>
+            </div>
+            <div class="modal__body">
+                <div class="tool-details" id="tool-details">
+                    <!-- Tool details will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vibe Coding Tools Overview. Data compiled from various sources as of June 2025.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
