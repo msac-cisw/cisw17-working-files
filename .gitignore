@@ -1,0 +1,50 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Finder metadata
+Icon?
+._*
+
+# Spotlight and Trash
+.Spotlight-V100
+.Trashes
+
+# Network share files
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# macOS folder attributes
+.DocumentRevisions-V100
+.TemporaryItems
+.apdisk
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+out/
+coverage/
+
+# Python cache, if you ever use Python in the repo
+__pycache__/
+*.py[cod]
+.venv/
+venv/
